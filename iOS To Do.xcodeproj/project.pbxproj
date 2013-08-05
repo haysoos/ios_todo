@@ -16,15 +16,14 @@
 		3B0663AE17AF50D500FBD603 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663AD17AF50D500FBD603 /* Default.png */; };
 		3B0663B017AF50D500FBD603 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663AF17AF50D500FBD603 /* Default@2x.png */; };
 		3B0663B217AF50D500FBD603 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663B117AF50D500FBD603 /* Default-568h@2x.png */; };
-		3B0663B517AF50D500FBD603 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0663B417AF50D500FBD603 /* MasterViewController.m */; };
-		3B0663B817AF50D500FBD603 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0663B717AF50D500FBD603 /* DetailViewController.m */; };
-		3B0663BB17AF50D500FBD603 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663B917AF50D500FBD603 /* MasterViewController.xib */; };
-		3B0663BE17AF50D500FBD603 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663BC17AF50D500FBD603 /* DetailViewController.xib */; };
 		3B0663C617AF50D500FBD603 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0663C517AF50D500FBD603 /* SenTestingKit.framework */; };
 		3B0663C717AF50D500FBD603 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06639B17AF50D500FBD603 /* UIKit.framework */; };
 		3B0663C817AF50D500FBD603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06639D17AF50D500FBD603 /* Foundation.framework */; };
 		3B0663D017AF50D500FBD603 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663CE17AF50D500FBD603 /* InfoPlist.strings */; };
 		3B0663D317AF50D500FBD603 /* iOS_To_DoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0663D217AF50D500FBD603 /* iOS_To_DoTests.m */; };
+		3B0663DE17AF5F5400FBD603 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0663DD17AF5F5400FBD603 /* ToDoTableViewCell.m */; };
+		3B0663E117AF609900FBD603 /* ToDoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0663E017AF609900FBD603 /* ToDoTableViewController.m */; };
+		3B0663E317AF623500FBD603 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0663E217AF623500FBD603 /* ToDoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,18 +50,17 @@
 		3B0663AD17AF50D500FBD603 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3B0663AF17AF50D500FBD603 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3B0663B117AF50D500FBD603 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3B0663B317AF50D500FBD603 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		3B0663B417AF50D500FBD603 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		3B0663B617AF50D500FBD603 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		3B0663B717AF50D500FBD603 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		3B0663BA17AF50D500FBD603 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
-		3B0663BD17AF50D500FBD603 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
 		3B0663C417AF50D500FBD603 /* iOS To DoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS To DoTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0663C517AF50D500FBD603 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		3B0663CD17AF50D500FBD603 /* iOS To DoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS To DoTests-Info.plist"; sourceTree = "<group>"; };
 		3B0663CF17AF50D500FBD603 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B0663D117AF50D500FBD603 /* iOS_To_DoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_To_DoTests.h; sourceTree = "<group>"; };
 		3B0663D217AF50D500FBD603 /* iOS_To_DoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_To_DoTests.m; sourceTree = "<group>"; };
+		3B0663DC17AF5F5400FBD603 /* ToDoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewCell.h; sourceTree = "<group>"; };
+		3B0663DD17AF5F5400FBD603 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
+		3B0663DF17AF609900FBD603 /* ToDoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewController.h; sourceTree = "<group>"; };
+		3B0663E017AF609900FBD603 /* ToDoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewController.m; sourceTree = "<group>"; };
+		3B0663E217AF623500FBD603 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,13 +122,12 @@
 			children = (
 				3B0663AA17AF50D500FBD603 /* AppDelegate.h */,
 				3B0663AB17AF50D500FBD603 /* AppDelegate.m */,
-				3B0663B317AF50D500FBD603 /* MasterViewController.h */,
-				3B0663B417AF50D500FBD603 /* MasterViewController.m */,
-				3B0663B617AF50D500FBD603 /* DetailViewController.h */,
-				3B0663B717AF50D500FBD603 /* DetailViewController.m */,
-				3B0663B917AF50D500FBD603 /* MasterViewController.xib */,
-				3B0663BC17AF50D500FBD603 /* DetailViewController.xib */,
 				3B0663A217AF50D500FBD603 /* Supporting Files */,
+				3B0663DC17AF5F5400FBD603 /* ToDoTableViewCell.h */,
+				3B0663DD17AF5F5400FBD603 /* ToDoTableViewCell.m */,
+				3B0663DF17AF609900FBD603 /* ToDoTableViewController.h */,
+				3B0663E017AF609900FBD603 /* ToDoTableViewController.m */,
+				3B0663E217AF623500FBD603 /* ToDoTableViewCell.xib */,
 			);
 			path = "iOS To Do";
 			sourceTree = "<group>";
@@ -243,8 +240,7 @@
 				3B0663AE17AF50D500FBD603 /* Default.png in Resources */,
 				3B0663B017AF50D500FBD603 /* Default@2x.png in Resources */,
 				3B0663B217AF50D500FBD603 /* Default-568h@2x.png in Resources */,
-				3B0663BB17AF50D500FBD603 /* MasterViewController.xib in Resources */,
-				3B0663BE17AF50D500FBD603 /* DetailViewController.xib in Resources */,
+				3B0663E317AF623500FBD603 /* ToDoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +277,8 @@
 			files = (
 				3B0663A817AF50D500FBD603 /* main.m in Sources */,
 				3B0663AC17AF50D500FBD603 /* AppDelegate.m in Sources */,
-				3B0663B517AF50D500FBD603 /* MasterViewController.m in Sources */,
-				3B0663B817AF50D500FBD603 /* DetailViewController.m in Sources */,
+				3B0663DE17AF5F5400FBD603 /* ToDoTableViewCell.m in Sources */,
+				3B0663E117AF609900FBD603 /* ToDoTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,22 +307,6 @@
 				3B0663A517AF50D500FBD603 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3B0663B917AF50D500FBD603 /* MasterViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B0663BA17AF50D500FBD603 /* en */,
-			);
-			name = MasterViewController.xib;
-			sourceTree = "<group>";
-		};
-		3B0663BC17AF50D500FBD603 /* DetailViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B0663BD17AF50D500FBD603 /* en */,
-			);
-			name = DetailViewController.xib;
 			sourceTree = "<group>";
 		};
 		3B0663CE17AF50D500FBD603 /* InfoPlist.strings */ = {
