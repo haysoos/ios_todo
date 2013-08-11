@@ -13,6 +13,8 @@
 
 - (void)onNewItem;
 - (void)doneWithNewItem;
+- (void)saveData;
+- (void)loadData;
 
 @end
 
@@ -38,7 +40,10 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onNewItem)];
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    todoArray = [NSMutableArray arrayWithObjects:@"test1",@"test2",@"test3",nil];
+    [self loadData];
+    if(todoArray.count == 0){
+        todoArray = [[NSMutableArray alloc] init];
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -98,6 +103,7 @@
         // Delete the row from the data source
         [todoArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self saveData];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -113,6 +119,7 @@
     
     [todoArray setObject:fromObject atIndexedSubscript:toIndexPath.row];
     [todoArray setObject:toObject atIndexedSubscript:fromIndexPath.row];
+    [self saveData];
 }
 
 
@@ -156,8 +163,22 @@
     //[todoArray insertObject:cell.editableCell.text atIndex:0];
     [todoArray setObject:cell.editableCell.text atIndexedSubscript:0];
     [self.tableView reloadData];
+    [self saveData];
 
     
+}
+
+#pragma mark - Private methods
+
+- (void)saveData{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:todoArray forKey:@"todoArray"];
+    [defaults synchronize];
+}
+
+- (void)loadData{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    todoArray = [defaults objectForKey:@"todoArray"];
 }
 
 
@@ -180,6 +201,7 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonItemStyleDone target:self action:@selector(doneWithNewItem)];
+    self.navigationItem.rightBarButtonItem.title = @"Done";
     
     return YES;
     
